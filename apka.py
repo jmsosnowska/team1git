@@ -33,3 +33,6 @@ if wiek >= 18:
     person_sex = person_sex_selection()
     aperol_spritz_for_free(person_sex)
 
+if wiek >= 18:
+    print("Witamy w sklepie z alko")
+else: print("Żegnamy, przyjdz za ", 18 - wiek, " lat")
