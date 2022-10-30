@@ -1,5 +1,13 @@
 import sys
 
+wiek = float(input('Podaj wiek:'))
+if(wiek) >= 40:
+    print("Mamy dla Ciebie specjalne ceny")
+if(wiek) < 18:
+    print("Serwis dostepny dla osob 18+")
+
+if(wiek) >= 18 and (wiek)<=39:
+    print("Zapraszamy")
 
 def annoying_user(counter):
     if counter >= 5 and counter < 10:
@@ -8,11 +16,9 @@ def annoying_user(counter):
         print("Przesadziles, nic dzis nie kupisz")
         sys.exit()
 
-
 def aperol_spritz_for_free(person_sex):
     if person_sex == 'K':
         print("Dzis jest Twoj szczesliwy dzien, kobiety dostaja Aperol Spritz do kazdego zamowienia ze friko!")
-
 
 def person_sex_selection():
     counter = 0
@@ -33,6 +39,4 @@ if wiek >= 18:
     person_sex = person_sex_selection()
     aperol_spritz_for_free(person_sex)
 
-if wiek >= 18:
-    print("Witamy w sklepie z alko")
-else: print("Żegnamy, przyjdz za ", 18 - wiek, " lat")
+
