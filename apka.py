@@ -15,9 +15,8 @@ def aperol_spritz_for_free(person_sex):
 
 
 def person_sex_selection():
-    flag = True
     counter = 0
-    while flag:
+    while 1:
         person_sex = input("Podaj swoja plec. 'M' - mezczyzna, 'K' - kobieta")
         counter +=1
         if person_sex == 'K' or person_sex == 'M':
