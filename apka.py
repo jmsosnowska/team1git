@@ -3,5 +3,8 @@ wiek = input("Podaj wiek: ")
 if wiek.isdigit() == False:
     exit("Wiek musi być liczbą")
 wiek = int(wiek)
-if wiek >= 18
+#region = input("Czy jesteś z USA (T - tak, N - nie")
+
+if wiek >= 18:
     print("Witamy!")
+else: print("Żegnamy, przyjdz za ", 18 - wiek, " lat")
